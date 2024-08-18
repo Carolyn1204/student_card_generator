@@ -1,0 +1,27 @@
+﻿<Window x:Class="StudentCard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentCard"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800">
+    <Grid Margin="0,0,0,-6" Height="598">
+
+        <TextBlock Text="Student Card Registration" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" Foreground="Blue" RenderTransformOrigin="0.53,1.962" Margin="0,23,0,0" />
+        <TextBlock HorizontalAlignment="Left" Margin="141,89,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="30" Width="61" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="141,142,0,0" TextWrapping="Wrap" Text="SurName" VerticalAlignment="Top" Height="30" Width="98" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="141,198,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Height="30" Width="98" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="141,249,0,0" TextWrapping="Wrap" Text="Date of Birth" VerticalAlignment="Top" Height="30" Width="133" FontSize="20"/>
+        <TextBox x:Name="nameTbx" HorizontalAlignment="Left" Margin="280,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" Height="30" FontSize="18"/>
+        <TextBox x:Name="surnameTbx" HorizontalAlignment="Left" Margin="280,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" Height="30" FontSize="18"/>
+        <TextBox x:Name="emailTbx" HorizontalAlignment="Left" Margin="280,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" Height="30" FontSize="18"/>
+        <Button Content="Register" HorizontalAlignment="Left" Margin="371,520,0,0" VerticalAlignment="Top" Height="39" Width="85" FontSize="18" Click="Button_Click"/>
+        <Calendar x:Name="dobCalendar" HorizontalAlignment="Left" Margin="280,255,0,0" VerticalAlignment="Top" SelectedDatesChanged="dobDateChanged"/>
+
+
+
+
+
+    </Grid>
+</Window>
